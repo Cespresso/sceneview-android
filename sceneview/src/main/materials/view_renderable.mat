@@ -43,7 +43,6 @@ fragment {
 
         if (materialParams.viewTextureReady) {
             material.baseColor = texture(materialParams_viewTexture, uv);
-            material.baseColor.rgb = inverseTonemapSRGB(material.baseColor.rgb);
         } else {
             material.baseColor = vec4(0.0);
         }
